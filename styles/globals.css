@@ -37,10 +37,15 @@ header a {
 }
 
 .container {
-  max-width: 768px;
+  display: flex;
+  justify-content: center;
   margin: auto;
   overflow: auto;
   padding: 0 10px;
+}
+
+.container-post {
+  max-width: 768px;
 }
 
 .btn {
@@ -116,4 +121,10 @@ ol {
   .posts {
     grid-template-columns: 1fr;
   }
+}
+
+
+.banner-container {
+  display: flex;
+  justify-content: center;
 }

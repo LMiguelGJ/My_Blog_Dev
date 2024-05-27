@@ -1,36 +1,36 @@
-// components/Banner.js
+// components/Banner300.js
 import { useEffect, useRef } from 'react';
 
-const Banner = () => {
-  const banner = useRef(null);
+const Banner300 = () => {
+  const banner300 = useRef(null);
 
   const atOptions = {
-    key: '30df60a097f74fe877515b0ca56a1ab9',
+    key: 'e695bd34e6efebc87b38b78690144d12',
     format: 'iframe',
-    height: 90,
-    width: 728,
+    height: 250,
+    width: 300,
     params: {},
   };
 
   useEffect(() => {
-    if (banner.current && !banner.current.firstChild) {
+    if (banner300.current && !banner300.current.firstChild) {
       const conf = document.createElement('script');
       const script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = `//www.topcreativeformat.com/${atOptions.key}/invoke.js`;
       conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
 
-      banner.current.appendChild(conf);
-      banner.current.appendChild(script);
+      banner300.current.appendChild(conf);
+      banner300.current.appendChild(script);
     }
-  }, [banner]);
+  }, [banner300]);
 
   return (
     <div
-      className="banner-container"
-      ref={banner}
+      className="banner300-container"
+      ref={banner300}
     ></div>
   );
 };
 
-export default Banner;
+export default Banner300;
