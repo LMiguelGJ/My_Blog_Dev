@@ -5,14 +5,14 @@ const Banner = () => {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.async = true;
-    script.src = '//www.topcreativeformat.com/a56d8d26ab126acaa943ee6ec9cae893/invoke.js';
+    script.src = '//www.topcreativeformat.com/134d86162e04ded2e82ed51471c77458/invoke.js';
     document.body.appendChild(script);
 
     const inlineScript = document.createElement('script');
     inlineScript.type = 'text/javascript';
     inlineScript.innerHTML = `
       atOptions = {
-        'key': 'a56d8d26ab126acaa943ee6ec9cae893',
+        'key': '134d86162e04ded2e82ed51471c77458',
         'format': 'iframe',
         'height': 60,
         'width': 468,
