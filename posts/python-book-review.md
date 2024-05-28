@@ -3,6 +3,7 @@ title: 'Python Book Review'
 date: 'March 7, 2024'
 excerpt: 'In this review, we will be looking at the new Python book from Oriley'
 cover_image: '/images/posts/img6.jpg'
+externalLink: 'https://www.highcpmgate.com/f43e9xiff?key=225efd16dbe2370d1166a754343b7523'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
