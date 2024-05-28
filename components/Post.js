@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Post({ post }) {
   return (
     <div className='card'>
- <Link href={post.frontmatter.externalLink} passHref>
+      <Link href={post.frontmatter.externalLink} passHref>
         <a target='_blank'>
           <img src={post.frontmatter.cover_image} alt='' />
         </a>
