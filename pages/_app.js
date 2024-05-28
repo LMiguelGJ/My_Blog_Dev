@@ -2,23 +2,25 @@ import React from 'react';
 import Header from '../components/Header';
 import '../styles/globals.css';
 import Banner from '../components/Banner';
-import Banner300 from '../components/Banner300';
-
-
+import BannerHead from '../components/BannerHead';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <Banner />
+        <div className='Banner-Head'>
+          <BannerHead count={2} prefix="left" />
+        </div>
       <main className='container'>
-      <Banner300 />
-
+        <div className='Banner-Left'>
+          <Banner count={7} prefix="left" />
+        </div>
         <div className='container-post'>
           <Component {...pageProps} />
         </div>
-
-
+        <div className='Banner-Right'>
+          <Banner count={7} prefix="right" />
+        </div>
       </main>
     </>
   );
