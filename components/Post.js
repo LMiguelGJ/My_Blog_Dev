@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Post({ post }) {
   const handleReadMoreClick = (e) => {
     e.preventDefault();
@@ -17,9 +15,7 @@ export default function Post({ post }) {
 
       <p>{post.frontmatter.excerpt}</p>
 
-      <Link href={`/blog/${post.slug}`} passHref>
-        <a className='btn'>Read More</a>
-      </Link>
+      <a className='btn' href={`/blog/${post.slug}`} passHref>Read More</a>
     </div>
   );
 }
