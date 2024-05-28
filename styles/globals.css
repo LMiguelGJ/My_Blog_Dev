@@ -122,7 +122,6 @@ ol {
   }
 }
 
-
 .container {
   display: flex;
   flex-direction: row;
@@ -133,4 +132,10 @@ ol {
 
 .Banner-Left, .Banner-Right {
   width: 320px;
+}
+
+.Banner-Head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
