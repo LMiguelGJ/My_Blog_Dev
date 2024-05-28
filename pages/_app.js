@@ -9,17 +9,17 @@ function MyApp({ Component, pageProps }) {
     <>
       <Header />
         <div className='Banner-Head'>
-          <BannerHead count={2} prefix="left" />
+          <BannerHead count={1} prefix="left" />
         </div>
       <main className='container'>
         <div className='Banner-Left'>
-          <Banner count={2} prefix="left" />
+          <Banner count={1} prefix="left" />
         </div>
         <div className='container-post'>
           <Component {...pageProps} />
         </div>
         <div className='Banner-Right'>
-          <Banner count={2} prefix="right" />
+          <Banner count={1} prefix="right" />
         </div>
       </main>
     </>
