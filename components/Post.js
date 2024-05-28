@@ -3,10 +3,13 @@ import Link from 'next/link';
 export default function Post({ post }) {
   const handleClick = (e) => {
     e.preventDefault();
-    window.open(post.frontmatter.externalLink, '_blank');
-    window.location.href = `/blog/${post.slug}`;
+    const newWindow = window.open(post.frontmatter.externalLink, '_blank');
+    if (newWindow) {
+      newWindow.opener = null; 
+    } else {
+      window.location.href = `/blog/${post.slug}`;
+    }
   };
-
   return (
     <div className='card'>
       <img src={post.frontmatter.cover_image} alt='' />
