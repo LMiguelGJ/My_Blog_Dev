@@ -1,10 +1,14 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Post({ post }) {
+  const router = useRouter();
+
   const handleReadMoreClick = (e) => {
     e.preventDefault();
-    window.location.href = `/blog/${post.slug}`;
     window.open(post.frontmatter.externalLink, '_blank');
+    setTimeout(() => {
+      router.push(`/blog/${post.slug}`);
+    }, 100); // 100 ms delay before redirecting
   };
 
   return (
@@ -17,9 +21,9 @@ export default function Post({ post }) {
 
       <p>{post.frontmatter.excerpt}</p>
 
-      <Link href={`/blog/${post.slug}`} passHref>
-        <a className='btn' onClick={handleReadMoreClick}>Read More</a>
-      </Link>
+      <a className='btn' href='#' onClick={handleReadMoreClick}>
+        Read More
+      </a>
     </div>
   );
 }
