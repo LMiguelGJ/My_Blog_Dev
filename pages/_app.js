@@ -13,13 +13,13 @@ function MyApp({ Component, pageProps }) {
         </div>
       <main className='container'>
         <div className='Banner-Left'>
-          <Banner count={7} prefix="left" />
+          <Banner count={2} prefix="left" />
         </div>
         <div className='container-post'>
           <Component {...pageProps} />
         </div>
         <div className='Banner-Right'>
-          <Banner count={7} prefix="right" />
+          <Banner count={2} prefix="right" />
         </div>
       </main>
     </>
