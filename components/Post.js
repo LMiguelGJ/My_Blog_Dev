@@ -1,19 +1,9 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Post({ post }) {
-  const router = useRouter();
-
-  const handleReadMoreClick = (e) => {
-    e.preventDefault();
-    window.open(post.frontmatter.externalLink, '_blank');
-    setTimeout(() => {
-      router.push(`/blog/${post.slug}`);
-    }, 100); // 100 ms delay before redirecting
-  };
-
   return (
     <div className='card'>
-      <img src={post.frontmatter.cover_image} alt='' />
+      <img src={post.frontmatter.cover_image} alt='' href={`${post.frontmatter.externalLink}`}  target='_blank' />
 
       <div className='post-date'>Posted on {post.frontmatter.date}</div>
 
@@ -21,9 +11,9 @@ export default function Post({ post }) {
 
       <p>{post.frontmatter.excerpt}</p>
 
-      <a className='btn' href='#' onClick={handleReadMoreClick}>
-        Read More
-      </a>
+      <Link href={`/blog/${post.slug}`} passHref>
+      <a className='btn'>Read More</a>
+      </Link>
     </div>
   );
 }
