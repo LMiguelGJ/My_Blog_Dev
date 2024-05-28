@@ -3,7 +3,7 @@ title: "What's New In PHP 8?"
 date: 'March 7, 2024'
 excerpt: 'In this article we will look at some of the new features offered in version 8 of PHP'
 cover_image: '/images/posts/img4.jpg'
-externalLink: 'https://www.highcpmgate.com/f43e9xiff?key=225efd16dbe2370d1166a754343b7523'
+externalLink: 'https://www.highcpmgate.com/e4wcqe6j7?key=24de15288a9d030492088808f2f83277'
 ---
 
 Lorem markdownum erat meritum instat quis! Parari vera harundinibus molibus nam

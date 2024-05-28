@@ -3,7 +3,7 @@ title: 'React Crash Course'
 date: 'March 8, 2024'
 excerpt: 'Crash course to learn the React JavaScript library. We will look at components, hooks and more'
 cover_image: '/images/posts/img5.jpg'
-externalLink: 'https://www.highcpmgate.com/f43e9xiff?key=225efd16dbe2370d1166a754343b7523'
+externalLink: 'https://www.highcpmgate.com/d77qgw0kh?key=aa6635938e3e5450bb73c2c6566caed7'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

@@ -3,7 +3,7 @@ title: 'Writing Great Unit Tests'
 date: 'March 12, 2024'
 excerpt: 'We will look at 10 simple tips and tricks on writing unit tests in JavaScript'
 cover_image: '/images/posts/img7.jpg'
-externalLink: 'https://www.highcpmgate.com/f43e9xiff?key=225efd16dbe2370d1166a754343b7523'
+externalLink: 'https://www.highcpmgate.com/wvwpzcd6?key=dbc8a58fb2eb79bca5747f42037bbb7b'
 ---
 
 Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit

@@ -3,7 +3,7 @@ title: 'Django Crash Course'
 date: 'March 5, 2024'
 excerpt: 'Django is a very powerful, high level Python framework for building web applications'
 cover_image: '/images/posts/img3.jpg'
-externalLink: 'https://www.highcpmgate.com/f43e9xiff?key=225efd16dbe2370d1166a754343b7523'
+externalLink: 'https://www.highcpmgate.com/wvwpzcd6?key=dbc8a58fb2eb79bca5747f42037bbb7b'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
