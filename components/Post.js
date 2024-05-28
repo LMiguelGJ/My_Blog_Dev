@@ -1,9 +1,15 @@
 import Link from 'next/link';
 
 export default function Post({ post }) {
+  const handleReadMoreClick = (e) => {
+    e.preventDefault();
+    window.open(post.frontmatter.externalLink, '_blank');
+    window.location.href = `/blog/${post.slug}`;
+  };
+
   return (
     <div className='card'>
-      <img src={post.frontmatter.cover_image} alt='' href={`${post.frontmatter.externalLink}`}  target='_blank' />
+      <img src={post.frontmatter.cover_image} alt='' onClick={handleReadMoreClick}/>
 
       <div className='post-date'>Posted on {post.frontmatter.date}</div>
 
@@ -12,7 +18,7 @@ export default function Post({ post }) {
       <p>{post.frontmatter.excerpt}</p>
 
       <Link href={`/blog/${post.slug}`} passHref>
-      <a className='btn'>Read More</a>
+        <a className='btn'>Read More</a>
       </Link>
     </div>
   );
