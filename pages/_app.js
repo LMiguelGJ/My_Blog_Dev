@@ -9,6 +9,10 @@ import SocialBar from '../components/SocialBar';
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <script id="_wau61d" dangerouslySetInnerHTML={{
+          __html: `var _wau = _wau || []; _wau.push(["tab", "8b0nwfbrou", "61d", "left-middle"]);`
+        }} />
+      <script async src="//waust.at/t.js"></script>
       <Header />
       <SocialBar uniqueKey="SocialBar-Head" />
       <PopunderScript uniqueKey="Banner-Head" />
