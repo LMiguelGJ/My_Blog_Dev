@@ -1,26 +1,30 @@
 import React from 'react';
 import Header from '../components/Header';
 import '../styles/globals.css';
-import Banner from '../components/Banner';
-import BannerHead from '../components/BannerHead';
+import PopunderScript from '../components/PopunderScript';
+// import Banner from '../components/Banner';
+// import BannerHead from '../components/BannerHead';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-        <div className='Banner-Head'>
+      <PopunderScript uniqueKey="Banner-Head" />
+        {/* <div className='Banner-Head'>
           <BannerHead count={1} prefix="left" />
-        </div>
+        </div> */}
       <main className='container'>
-        <div className='Banner-Left'>
+      <PopunderScript uniqueKey="Banner-Left" />
+        {/* <div className='Banner-Left'>
           <Banner count={1} prefix="left" />
-        </div>
+        </div> */}
         <div className='container-post'>
           <Component {...pageProps} />
         </div>
-        <div className='Banner-Right'>
+        <PopunderScript uniqueKey="Banner-Right" />
+        {/* <div className='Banner-Right'>
           <Banner count={1} prefix="right" />
-        </div>
+        </div> */}
       </main>
     </>
   );
