@@ -13,10 +13,10 @@ const BannerHead = ({ count }) => {
 
     for (let i = 1; i <= count; i++) {
       const options = {
-        key: '30df60a097f74fe877515b0ca56a1ab9',
+        key: 'a0c404a1fcdcfb73a5e8efa1b48bb154',
         format: 'iframe',
-        height: 90,
-        width: 728,
+        height: 50,
+        width: 320,
         params: {}
       };
       loadAd(`ad_iframe${i}`, options);
@@ -29,8 +29,8 @@ const BannerHead = ({ count }) => {
         <iframe
           key={i}
           id={`ad_iframe${i + 1}`}
-          height="110"
-          width="748"
+          height="70"
+          width="340"
           title={`Ad iframe ${i + 1}`}
         ></iframe>
       ))}

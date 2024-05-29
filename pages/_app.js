@@ -4,7 +4,7 @@ import '../styles/globals.css';
 import PopunderScript from '../components/PopunderScript';
 import SocialBar from '../components/SocialBar';
 // import Banner from '../components/Banner';
-// import BannerHead from '../components/BannerHead';
+import BannerHead from '../components/BannerHead';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <SocialBar uniqueKey="SocialBar-Head" />
       <PopunderScript uniqueKey="Banner-Head" />
-        {/* <div className='Banner-Head'>
+        <div className='Banner-Head'>
           <BannerHead count={1} prefix="left" />
-        </div> */}
+        </div>
       <main className='container'>
       <PopunderScript uniqueKey="Banner-Left" />
         {/* <div className='Banner-Left'>
