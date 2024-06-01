@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import '../styles/globals.css';
 import PopunderScript from '../components/PopunderScript';
-import SocialBar from '../components/SocialBar';
+// import SocialBar from '../components/SocialBar';
 // import Banner from '../components/Banner';
 // import BannerHead from '../components/BannerHead';
 
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         }} />
       <script async src="//waust.at/t.js"></script>
       <Header />
-      <SocialBar uniqueKey="SocialBar-Head" />
+      {/* <SocialBar uniqueKey="SocialBar-Head" /> */}
       <PopunderScript uniqueKey="Banner-Head" />
         {/* <div className='Banner-Head'>
           <BannerHead count={1} prefix="left" />
