@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
-import SocialBar from '../../components/SocialBar';
+// import SocialBar from '../../components/SocialBar';
 
 
 export default function PostPage({
@@ -16,7 +16,7 @@ export default function PostPage({
       <Link href='/'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
-      <SocialBar uniqueKey="SocialBar-Head" />
+      {/* <SocialBar uniqueKey="SocialBar-Head" /> */}
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
